@@ -1,78 +1,93 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  max-width: 800px;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-}
-
-h1 {
-  text-align: center;
-  color: #333;
-}
-
-.sport {
-  text-align: center;
-  color: #777;
-  font-size: 18px; /* Updated font size to 18px */
-  margin-top: -10px; /* Adjust margin if necessary */
-}
-
-table {
+/* Basic styling for the table */
+.attendance-table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
 }
 
-th,
-td {
-  padding: 10px;
+/* Table header and cells */
+.attendance-table th,
+.attendance-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
   text-align: center;
-  border-bottom: 1px solid #ddd;
 }
 
-th {
-  background-color: #f8f8f8;
+/* Table header */
+.attendance-table th {
+  background-color: #4caf50; /* Darker green for header */
+  color: white;
   font-weight: bold;
 }
 
-tr:hover {
-  background-color: #f1f1f1;
+/* Table rows */
+.attendance-table tr:nth-child(even) {
+  background-color: #f9f9f9;
 }
 
-button {
-  display: block;
+.attendance-table tr:hover {
+  background-color: #ddd;
+}
+
+/* Row background color when attended checkbox is unchecked */
+.row-not-attended {
+  background-color: #ffcccc; /* Slightly red background for non-attended rows */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Styling for checkboxes */
+input[type="checkbox"] {
+  width: 24px; /* Larger checkbox */
+  height: 24px;
+}
+
+/* Style for the class select dropdown */
+#classSelect {
   width: 100%;
-  padding: 10px;
-  margin-top: 20px;
-  background-color: #4caf50;
+  padding: 12px;
+  font-size: 16px;
+  text-align: center;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Style for the export button */
+#exportButton {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #4caf50; /* Green color */
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  display: block;
+  margin: 20px auto; /* Center the button */
 }
 
-button:hover {
+#exportButton:hover {
   background-color: #45a049;
 }
 
-.row-not-attended {
-  background-color: #ffe6e6;
+/* Style for the class name text */
+.class-name {
+  font-size: 18px;
+  text-align: center;
+  margin: 10px 0;
+  font-weight: bold;
 }
 
-/* Increase checkbox size */
-input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
-  transform: scale(1.5); /* Increases the overall size */
-  margin: 5px;
+/* Additional styling for container and overall layout */
+#container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4; /* Light gray background */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#tableContainer {
+  margin-top: 20px;
 }
