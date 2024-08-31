@@ -22,7 +22,7 @@ h1 {
 .sport {
   text-align: center;
   color: #777;
-  font-size: 18px; /* Smaller text size */
+  font-size: 18px; /* Updated font size to 18px */
   margin-top: -10px; /* Adjust margin if necessary */
 }
 
@@ -67,4 +67,12 @@ button:hover {
 
 .row-not-attended {
   background-color: #ffe6e6;
+}
+
+/* Increase checkbox size */
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  transform: scale(1.5); /* Increases the overall size */
+  margin: 5px;
 }
