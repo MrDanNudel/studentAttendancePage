@@ -19,6 +19,13 @@ h1 {
   color: #333;
 }
 
+.sport {
+  text-align: center;
+  color: #777;
+  font-size: 18px; /* Smaller text size */
+  margin-top: -10px; /* Adjust margin if necessary */
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -58,7 +65,6 @@ button:hover {
   background-color: #45a049;
 }
 
-/* Add a slight red background color to rows when 'Attended' is unchecked */
 .row-not-attended {
   background-color: #ffe6e6;
 }
